@@ -2,7 +2,7 @@
 login-api-with-jwt
 
 login api - https://loginkro.herokuapp.com/api/user/login
-
+Method - POST
 body - 
 {
 "email":"youremailhere@gmail.com",
@@ -10,6 +10,7 @@ body -
 }
 
 register api - https://loginkro.herokuapp.com/api/user/register
+Method - POST
 body - 
 {
 "name":"your name here"
@@ -19,3 +20,5 @@ body -
 
 
 private route - https://loginkro.herokuapp.com/api/privateroute
+Method - GET
+with "auth-token" - 'your token here'
