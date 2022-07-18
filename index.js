@@ -9,6 +9,7 @@ dotenv.config()
 //ImportRoutes
 
   const authRoute = require('./routes/auth')
+  const privateRoute = require('./routes/privateRoute')
 
   //Connect to DB
 
@@ -24,6 +25,7 @@ app.use(express.json())
 
 //Route Middleware
   app.use('/api/user', authRoute)
+  app.use('/api/private', privateRoute)
 
  app.listen(PORT, () =>{
    console.log('Server Up and running')
